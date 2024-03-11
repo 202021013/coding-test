@@ -5,10 +5,10 @@ def solution(answers):
     
     for i, answer in enumerate(answers):
         for j in range(3):
-            if answer == patterns[j][i % len(patterns[j])]: # patterns보다 길 경우 반복되게
+            if answer == patterns[j][i % len(patterns[j])]:   # answers가 patterns보다 길때
                 count[j] += 1
-
+    
     max_count = max(count)
-    result = [i + 1 for i, c in enumerate(count) if c == max_count] # 가장 큰 값의 인덱스에 +1한 값
-
+    result = [i+1 for i,c in enumerate(count) if c == max_count] # 가장 큰 값의 index값의 +1
+    
     return result
