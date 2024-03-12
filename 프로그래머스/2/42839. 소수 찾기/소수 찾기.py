@@ -24,4 +24,5 @@ def solution(numbers):
     
     # 그 리스트에 들어있는 수 갯수.
     answer = len(prime_list)
+    
     return answer
